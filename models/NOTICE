@@ -1,0 +1,18 @@
+blaze_face_full_range.tflite
+
+Source: https://storage.googleapis.com/mediapipe-models/face_detector/blaze_face_full_range/float16/1/blaze_face_full_range.tflite
+Model: MediaPipe BlazeFace full-range face detector (float16)
+Copyright: The MediaPipe Authors / Google
+License: Apache License 2.0
+
+The model file is redistributed here so the app can detect faces offline,
+without downloading weights at classroom runtime.
+
+haarcascade_frontalface_default.xml
+
+Source: https://github.com/opencv/opencv/blob/4.10.0/data/haarcascades/haarcascade_frontalface_default.xml
+Copyright: OpenCV contributors
+License: Apache License 2.0
+
+Vendored because some OpenCV wheels do not ship the cascade files. It is used
+only when MediaPipe cannot load.
